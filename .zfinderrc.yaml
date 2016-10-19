@@ -1,0 +1,34 @@
+openOnStart: true
+port: 2555
+dotfiles: allow
+build:
+  assetsServer: http://zfinder.alipay.net/zfinder
+  gitignore: true
+handler:
+  make-dir:
+  read-dir:
+  read-file:
+  remove-path:
+  rename-path:
+  write-file:
+  explorer:
+  # search
+  content-search:
+  glob-search:
+  # dot (graphviz)
+  dot-previewer:
+  dot-renderer:
+  # plantuml
+  plantuml-previewer:
+  plantuml-renderer:
+  # markdown (preview and edit)
+  # markdown-editor:
+  markdown-previewer:
+  markdown-renderer:
+  # xmind (preview and edit)
+  # xmind-previewer:
+  # xmind-editor:
+  # text editor
+  text-editor:
+  # automatically add a suffix to current url
+  serve-index:

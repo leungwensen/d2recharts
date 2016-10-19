@@ -1,0 +1,35 @@
+{
+  "name": "d2recharts",
+  "version": "0.0.1",
+  "description": "data driven react components of echarts",
+  "main": "lib/index.js",
+  "scripts": {
+    "build-doc": "zfinder build",
+    "eslint": "gulp eslint",
+    "start": "gulp",
+    "start-doc": "zfinder serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leungwensen/d2recharts.git"
+  },
+  "keywords": [
+    "data",
+    "react",
+    "echarts",
+    "component"
+  ],
+  "author": "leungwensen@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leungwensen/d2recharts/issues"
+  },
+  "homepage": "https://github.com/leungwensen/d2recharts#readme",
+  "dependencies": {
+    "echarts": "^3.2.3"
+  },
+  "devDependencies": {
+    "zfinder": "^0.2.9"
+  }
+}

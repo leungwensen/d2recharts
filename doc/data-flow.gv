@@ -1,0 +1,9 @@
+digraph data_flow {
+    rankdir=LR;
+    node[shape=box];
+    "d2recharts"[shape=oval,style=filled,fillcolor=lightyellow];
+
+    "features you want" -> "d2recharts";
+    "data set" -> "d2recharts";
+    "d2recharts" -> "charts";
+}

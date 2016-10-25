@@ -5,7 +5,7 @@ d2recharts
 
 ## what?
 
-![data-flow](doc/data-flow.svg)
+![data-flow](doc/data-flow.png)
 
 ## Why?
 

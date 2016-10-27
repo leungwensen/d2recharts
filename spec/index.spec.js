@@ -4,4 +4,8 @@
  * @module index.spec
  * @see module:index
  */
-module.exports = {};
+mocha.setup('bdd');
+
+require('./data-set.spec');
+
+mocha.run();

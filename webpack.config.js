@@ -1,7 +1,7 @@
-const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -52,9 +52,8 @@ module.exports = {
     ]
   },
   externals: {
-    'codemirror': 'CodeMirror',
     'jquery': 'jQuery',
-    'xml-lite': 'XMLLite',
+    'd2recharts': 'd2recharts',
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),

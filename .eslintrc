@@ -21,6 +21,7 @@
     "new-cap": 1,
     "no-cond-assign": 1,
     "no-fallthrough": 1,
+    "no-loop-func": 1,
     "no-mixed-operators": 1,
     "no-new": 1,
     "no-param-reassign": 1,

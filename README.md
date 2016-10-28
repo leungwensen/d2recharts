@@ -24,6 +24,8 @@ A typical use case is like:
 ```jsx
 <D2Pie
     name="访问来源"
+    tooltip="true"
+    legend="true"
     data={[
        {value:335, name:'直接访问'},
        {value:310, name:'邮件营销'},
@@ -31,10 +33,7 @@ A typical use case is like:
        {value:135, name:'视频广告'},
        {value:1548, name:'搜索引擎'}
     ]}
->
-    <D2Tooltip />
-    <D2Legend />
-</D2Pie>
+/>
 ```
 
 Simplest use case:
@@ -43,9 +42,7 @@ Simplest use case:
 const data = [
     // data goes here
 ];
-<D2Recharts
-    data={data}
-/>
+<D2Recharts data={data} />
 ```
 
 If you want fully functionality of echarts:
@@ -54,15 +51,13 @@ If you want fully functionality of echarts:
 const option = {
     // echarts option goes here
 };
-<D2Recharts
-    option={option}
-/>
+<D2Recharts option={option} />
 ```
 
-## Demo
+## [Demo](./demo)
 
-## API
+## [API](./doc/api.md)
 
-## Roadmap
+## [Roadmap](./doc/roadmap.md)
 
-## Contributing
+## [Contributing](./doc/contributing.md)

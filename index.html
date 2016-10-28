@@ -52,6 +52,8 @@
 <p>A typical use case is like:</p>
 <pre><code class="language-jsx">&lt;D2Pie
     name=<span class="hljs-string">"访问来源"</span>
+    tooltip=<span class="hljs-string">"true"</span>
+    legend=<span class="hljs-string">"true"</span>
     data={[
        {<span class="hljs-attr">value</span>:<span class="hljs-number">335</span>, <span class="hljs-attr">name</span>:<span class="hljs-string">'直接访问'</span>},
        {<span class="hljs-attr">value</span>:<span class="hljs-number">310</span>, <span class="hljs-attr">name</span>:<span class="hljs-string">'邮件营销'</span>},
@@ -59,31 +61,24 @@
        {<span class="hljs-attr">value</span>:<span class="hljs-number">135</span>, <span class="hljs-attr">name</span>:<span class="hljs-string">'视频广告'</span>},
        {<span class="hljs-attr">value</span>:<span class="hljs-number">1548</span>, <span class="hljs-attr">name</span>:<span class="hljs-string">'搜索引擎'</span>}
     ]}
-&gt;
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">D2Tooltip</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">D2Legend</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">D2Pie</span>&gt;</span></span>
+/&gt;
 </code></pre>
 <p>Simplest use case:</p>
 <pre><code class="language-jsx"><span class="hljs-keyword">const</span> data = [
     <span class="hljs-comment">// data goes here</span>
 ];
-<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">D2Recharts</span>
-    <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span>
-/&gt;</span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">D2Recharts</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span> /&gt;</span>
 </span></code></pre>
 <p>If you want fully functionality of echarts:</p>
 <pre><code class="language-jsx"><span class="hljs-keyword">const</span> option = {
     <span class="hljs-comment">// echarts option goes here</span>
 };
-<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">D2Recharts</span>
-    <span class="hljs-attr">option</span>=<span class="hljs-string">{option}</span>
-/&gt;</span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">D2Recharts</span> <span class="hljs-attr">option</span>=<span class="hljs-string">{option}</span> /&gt;</span>
 </span></code></pre>
-<h2>Demo</h2>
-<h2>API</h2>
-<h2>Roadmap</h2>
-<h2>Contributing</h2>
+<h2><a href="./demo">Demo</a></h2>
+<h2><a href="./doc/api.html">API</a></h2>
+<h2><a href="./doc/roadmap.html">Roadmap</a></h2>
+<h2><a href="./doc/contributing.html">Contributing</a></h2>
 </div>
 </article>
 <div id="loading">

@@ -6,8 +6,14 @@
   "scripts": {
     "build-doc": "zfinder build",
     "eslint": "gulp eslint",
+    "publish-all": "npm run push-all && npm publish && npm run sync-cnpm",
+    "push-all": "npm run push-master && npm run push-tags && npm run push-gh-pages",
+    "push-gh-pages": "git checkout gh-pages && git merge master && git push && git checkout master",
+    "push-master": "git checkout master && git push",
+    "push-tags": "git push --tag",
     "start": "gulp",
     "start-doc": "zfinder serve",
+    "sync-cnpm": "cnpm sync $npm_package_name",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "pre-commit": [

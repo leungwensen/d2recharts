@@ -5,6 +5,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
+    'demo/index': path.resolve(__dirname, './demo/index.demo.js'),
     'dist/d2recharts': path.resolve(__dirname, './lib/index.js'),
     'spec/index': path.resolve(__dirname, './spec/index.spec.js'),
   },

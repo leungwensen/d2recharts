@@ -2,7 +2,7 @@ openOnStart: true
 port: 2555
 dotfiles: allow
 build:
-  assetsServer: http://zfinder.alipay.net/zfinder
+  assetsServer: https://leungwensen.github.io/zfinder
   gitignore: true
 handler:
   make-dir:

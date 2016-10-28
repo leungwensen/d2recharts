@@ -27,6 +27,7 @@ module.exports = {
         query: {
           presets: [
             'es2015',
+            'react',
           ]
         }
       },
@@ -54,6 +55,7 @@ module.exports = {
   },
   externals: {
     'jquery': 'jQuery',
+    'react': 'React',
     'd2recharts': 'd2recharts',
   },
   plugins: [

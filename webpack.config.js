@@ -54,6 +54,7 @@ module.exports = {
     ]
   },
   externals: {
+    'echarts': 'echarts',
     'jquery': 'jQuery',
     'react': 'React',
     'd2recharts': 'd2recharts',

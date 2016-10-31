@@ -42,7 +42,7 @@ Simplest use case:
 const data = [
     // data goes here
 ];
-<D2Recharts data={data} />
+<D2RechartsSmart data={data} />
 ```
 
 If you want fully functionality of echarts:

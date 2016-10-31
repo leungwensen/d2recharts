@@ -54,10 +54,11 @@ module.exports = {
     ]
   },
   externals: {
+    'd2recharts': 'd2recharts',
     'echarts': 'echarts',
     'jquery': 'jQuery',
     'react': 'React',
-    'd2recharts': 'd2recharts',
+    'react-dom': 'ReactDOM',
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),

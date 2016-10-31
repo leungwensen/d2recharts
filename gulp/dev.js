@@ -12,10 +12,11 @@ const devPort = config.ports.dev;
 gulp.task('dev', (/** done */) => {
   const compiler = webpack(webpackDevConf);
   const devSvr = new WebpackDevServer(compiler, {
+    "watch-poll": true,
     contentBase: webpackDevConf.output.path,
-    publicPath: webpackDevConf.output.publicPath,
     hot: true,
-    stats: webpackDevConf.devServer.stats
+    publicPath: webpackDevConf.output.publicPath,
+    stats: webpackDevConf.devServer.stats, // FIXME this is for working on windows
   });
 
   devSvr.listen(devPort, LOCALHOST, (err) => {

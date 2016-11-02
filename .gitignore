@@ -39,3 +39,5 @@ jspm_packages
 .idea
 
 doc/jsdoc
+
+temp

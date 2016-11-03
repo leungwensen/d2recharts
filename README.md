@@ -58,3 +58,8 @@ const option = {
 ## [Roadmap](./doc/roadmap.md)
 
 ## [Contributing](./doc/contributing.md)
+
+## Thanks to
+
+* [echarts](https://github.com/ecomfe/echarts): one of the greatest open source project for graphing.
+* [echarts-for-react](https://github.com/hustcc/echarts-for-react): where the core react wrapping is stolen from.

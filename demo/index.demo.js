@@ -9,8 +9,6 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 require('./index.less');
 
-const D2Pie = d2recharts.D2Pie;
-
 const data = [
   {genre: 'Sports', sold: 275},
   {genre: 'Strategy', sold: 115},
@@ -21,7 +19,8 @@ const data = [
 
 ReactDOM.render(
   (
-    <D2Pie data={data}/>
+    <d2recharts.D2Pie data={data}/>
+    /*<d2recharts.D2Gauge data={data} dataRow="2"/>*/
   ),
   document.getElementById('canvas')
 );

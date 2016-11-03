@@ -23,9 +23,6 @@ A typical use case is like:
 
 ```jsx
 <D2Pie
-    name="访问来源"
-    tooltip="true"
-    legend="true"
     data={[
        {value:335, name:'直接访问'},
        {value:310, name:'邮件营销'},

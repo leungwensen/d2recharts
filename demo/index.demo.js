@@ -19,7 +19,8 @@ const data = [
 
 ReactDOM.render(
   (
-    <d2recharts.D2Pie data={data}/>
+    <d2recharts.D2Bar data={data}/>
+    /*<d2recharts.D2Pie data={data}/>*/
     /*<d2recharts.D2Gauge data={data} dataRow="2"/>*/
   ),
   document.getElementById('canvas')

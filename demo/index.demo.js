@@ -21,7 +21,8 @@ ReactDOM.render(
   (
     /*<d2recharts.D2Bar data={data}/>*/
     /*<d2recharts.D2Line data={data}/>*/
-    <d2recharts.D2Pie data={data}/>
+    /*<d2recharts.D2Pie data={data}/>*/
+    <d2recharts.D2Radar data={data}/>
     /*<d2recharts.D2Gauge data={data} rowIndex="2" measures={['price']}/>*/
   ),
   document.getElementById('canvas')

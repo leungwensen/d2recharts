@@ -6,6 +6,7 @@
  */
 const d2recharts = require('d2recharts');
 const React = require('react');
+const $ = require('jquery');
 const ReactDOM = require('react-dom');
 require('./index.less');
 
@@ -17,14 +18,17 @@ const data = [
   {genre: 'Other', sold: 150, price: 106}
 ];
 
-ReactDOM.render(
-  (
-    /*<d2recharts.D2Bar data={data}/>*/
-    /*<d2recharts.D2Line data={data}/>*/
-    /*<d2recharts.D2Pie data={data}/>*/
-    <d2recharts.D2Radar data={data}/>
-    /*<d2recharts.D2Gauge data={data} rowIndex="2" measures={['price']}/>*/
-  ),
-  document.getElementById('canvas')
-);
+$.get('./data/csv/population-china.csv', (csv) => {
+  ReactDOM.render(
+    (
+      /*<d2recharts.D2Bar data={csv}/>*/
+      /*<d2recharts.D2Line data={csv}/>*/
+      <d2recharts.D2Pie data={csv} dimension="统计时间" measures={["年末人口"]}/>
+      /*<d2recharts.D2Radar data={csv}/>*/
+      /*<d2recharts.D2Gauge data={csv} rowIndex="2" measures={['price']}/>*/
+    ),
+    document.getElementById('canvas')
+  );
+}, 'text');
+
 

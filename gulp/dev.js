@@ -12,7 +12,7 @@ const devPort = config.ports.dev;
 gulp.task('dev', (/** done */) => {
   const compiler = webpack(webpackDevConf);
   const devSvr = new WebpackDevServer(compiler, {
-    "watch-poll": true, // FIXME this is for working on windows
+    'watch-poll': true, // FIXME this is for working on windows
     watchOptions: { // FIXME this is for working on windows
       aggregateTimeout: 300,
       poll: 1000 // is this the same as specifying --watch-poll?

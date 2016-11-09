@@ -21,7 +21,7 @@ const data = [
 $.get('./data/csv/population-china.csv', (csv) => {
   ReactDOM.render(
     (
-      <d2recharts.D2Text data={csv}/>
+      <d2recharts.D2RechartsSmart data={csv}/>
     ),
     document.getElementById('canvas')
   );

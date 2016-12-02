@@ -22,7 +22,7 @@ $.get('./data/csv/population-china.csv', (csv) => {
   ReactDOM.render(
     (
       <div>
-        <d2recharts.D2Scatter data={csv} measures={[
+        <d2recharts.D2Scatter data={csv} theme="warm-color" measures={[
           "统计时间",
           "年末人口（万人）",
         ]}/>

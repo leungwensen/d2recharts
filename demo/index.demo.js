@@ -22,11 +22,9 @@ $.get('./data/csv/population-china.csv', (csv) => {
   ReactDOM.render(
     (
       <div>
-        <d2recharts.D2Funnel data={csv}/>
-        <d2recharts.D2Smart data={csv}/>
-        <d2recharts.D2Indicator data={csv} style={{
-          height: 'auto',
-        }}/>
+        <d2recharts.Funnel data={csv}/>
+        <d2recharts.Smart data={csv}/>
+        <d2recharts.Indicator data={csv} height="auto"/>
       </div>
     ),
     document.getElementById('canvas')

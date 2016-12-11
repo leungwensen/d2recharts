@@ -23,7 +23,7 @@ $.get('./data/csv/population-china.csv', (csv) => {
     (
       <div>
         <d2recharts.D2Funnel data={csv}/>
-        <d2recharts.D2RechartsSmart data={csv}/>
+        <d2recharts.D2Smart data={csv}/>
         <d2recharts.D2Indicator data={csv} style={{
           height: 'auto',
         }}/>

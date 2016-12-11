@@ -1,0 +1,29 @@
+.d2indicator {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  .d2indicator-item {
+    display: inline-block;
+    padding: .3em;
+    &:hover {
+      box-shadow: 5px 0 5px rgba(0, 0, 0, 0.05), -5px 0 5px rgba(0, 0, 0, 0.05), 0 -5px 5px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.05);
+    }
+    .measure {
+      width: 100%;
+      display: table-row;
+    }
+    .main-measure {
+      text-align: right;
+      font-size: 2em;
+      margin: .3em 0;
+    }
+    .value {
+      text-align: right;
+      display: table-cell;
+    }
+    .dimension {
+      font-size: 1.5em;
+      margin: 0 0 .3em;
+    }
+  }
+}

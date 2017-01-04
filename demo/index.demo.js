@@ -23,13 +23,13 @@ ReactDOM.render(
   (
     <div>
       <d2recharts.Bar data={data}/>
+      <d2recharts.Line data={data}/>
+      <d2recharts.Scatter data={data}/>
       <d2recharts.Funnel data={data}/>
       <d2recharts.Gauge data={data}/>
       <d2recharts.Indicator data={data} height="auto"/>
-      <d2recharts.Line data={data}/>
       <d2recharts.Pie data={data}/>
       <d2recharts.Radar data={data}/>
-      <d2recharts.Scatter data={data}/>
       <d2recharts.Smart data={data}/>
     </div>
   ),

@@ -1,29 +1,68 @@
+@borderColor: #e9e9e9;
+@black: #333;
+@grey: #666;
+
 .d2indicator {
+  * {
+    box-sizing: border-box;
+  }
   list-style: none;
   margin: 0;
   padding: 0;
   .d2indicator-item {
     display: inline-block;
-    padding: .3em;
+    width: 262px;
+    height: 100%;
+    margin-right: 15px;
+    border: 1px solid @borderColor;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .12);
+    background-color: #fff;
+    will-change: background-color, box-shadow;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
     &:hover {
-      box-shadow: 5px 0 5px rgba(0, 0, 0, 0.05), -5px 0 5px rgba(0, 0, 0, 0.05), 0 -5px 5px rgba(0, 0, 0, 0.05), 0 5px 5px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .26);
+      background-color: darken(#fff, 1.5%);
+    }
+    .key, .value {
+      display: block;
     }
     .measure {
-      width: 100%;
-      display: table-row;
+      height: 32px;
+      padding: 10px 16px;
+      .key {
+        float: left;
+        font-size: 12px;
+      }
+      .value {
+        float: right;
+        font-size: 12px;
+      }
+      &::after {
+        content: '';
+        clear: both;
+        display: block;
+        height: 0;
+      }
     }
-    .main-measure {
-      text-align: right;
-      font-size: 2em;
-      margin: .3em 0;
-    }
-    .value {
-      text-align: right;
-      display: table-cell;
-    }
-    .dimension {
-      font-size: 1.5em;
-      margin: 0 0 .3em;
+    .dimension, .main-measure {
+      height: 92px;
+      padding: 16px;
+      border-bottom: 1px solid @borderColor;
+      .key {
+        height: 20px;
+        font-size: 14px;
+        color: @grey;
+        line-height: 20px;
+      }
+      .value {
+        height: 30px;
+        margin-top: 10px; 
+        font-size: 24px;
+        color: @black;
+        line-height: 30px;
+      }
     }
   }
 }

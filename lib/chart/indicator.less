@@ -9,11 +9,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  &.show-sample .d2indicator-item {
+    display: block;
+    width: auto;
+  }
   .d2indicator-item {
     display: inline-block;
     width: calc(~"25% - 12px");
     height: 100%;
-    margin: 12px 6px;
+    margin: 8px 6px;
     border: 1px solid @borderColor;
     border-radius: 4px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .12);

@@ -57,6 +57,7 @@ module.exports = {
     'd2recharts': 'd2recharts',
     'echarts': 'echarts',
     'jquery': 'jQuery',
+    'lodash': '_',
     'react': 'React',
     'react-dom': 'ReactDOM',
   },

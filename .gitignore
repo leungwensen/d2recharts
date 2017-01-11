@@ -41,3 +41,6 @@ jspm_packages
 doc/jsdoc
 
 temp
+
+# System
+.DS_Store

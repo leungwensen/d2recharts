@@ -37,8 +37,8 @@ ReactDOM.render(
       <d2recharts.Scatter padding={padding} data={data}/>
       <d2recharts.Funnel padding={padding} data={data}/>
       <d2recharts.Gauge padding={padding} data={data}/>
-      <d2recharts.Indicator padding={padding} data={data} height="auto"/>
-      <d2recharts.Pie padding={padding} data={data}/>
+      <d2recharts.Indicator padding={padding} data={data} height="auto" measures={['price']}/>
+      <d2recharts.Pie padding={padding} data={data} measures={['price']}/>
       <d2recharts.Radar padding={padding} data={data}/>
       <d2recharts.Smart padding={padding} data={data}/>
     </div>

@@ -1,6 +1,6 @@
 {
   "name": "d2recharts",
-  "version": "0.3.15",
+  "version": "0.3.16",
   "description": "data driven react components of echarts",
   "main": "lib/index.js",
   "scripts": {

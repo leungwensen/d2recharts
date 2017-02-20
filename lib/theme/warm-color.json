@@ -36,7 +36,7 @@
       }
     },
     "symbolSize": 4,
-    "symbol": "image://",
+    "symbol": "emptyCircle",
     "smooth": false
   },
   "radar": {

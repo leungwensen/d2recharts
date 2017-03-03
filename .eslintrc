@@ -10,14 +10,7 @@
   ],
   "globals": {
     "chai": true,
-    "XMLLite": true,
-    "React": true,
-    "_": true,
-    "DataSet": true,
-    "util": true,
-    "echarts": true,
-    "ReactDOM": true,
-    "d2recharts": true
+    "XMLLite": true
   },
   "rules": {
     "comma-dangle": 0,

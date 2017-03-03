@@ -4,12 +4,20 @@
     "node": true,
     "mocha": true
   },
+  "parser": "babel-eslint",
   "extends": [
     "eslint-config-airbnb"
   ],
   "globals": {
     "chai": true,
-    "XMLLite": true
+    "XMLLite": true,
+    "React": true,
+    "_": true,
+    "DataSet": true,
+    "util": true,
+    "echarts": true,
+    "ReactDOM": true,
+    "d2recharts": true
   },
   "rules": {
     "comma-dangle": 0,

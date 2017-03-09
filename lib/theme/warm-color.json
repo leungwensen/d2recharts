@@ -35,8 +35,8 @@
         "width": 2
       }
     },
-    "symbolSize": 4,
-    "symbol": "image://",
+    "symbolSize": 6,
+    "symbol": "circle",
     "smooth": false
   },
   "radar": {
